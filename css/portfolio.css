@@ -1,0 +1,129 @@
+body {
+  background-color: #006633;
+  color: #fff;
+}
+
+a:hover {
+ color: #006633;
+}
+
+#about, #contact, #welcome {
+  height: 40rem;
+}
+
+.navbar-default {
+  background-color: #006633;
+  border: none;
+  height: 9rem;
+  padding-left: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #006633;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-horizontal-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 3rem;
+  Adds the transparent background
+  background-color: rgba(1, 1, 1, 0.8);
+  color: rgba(1, 1, 1, 0.8);
+}
+
+
+#navigation .navlinks .link{
+  float: left;
+  margin-bottom: 3rem;
+  width: 100%;
+  width: 15rem;
+  border-bottom: 4px solid white;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+#navigation .navlinks .link  a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 1.5rem;
+  width: 15rem;
+}
+*/
+#name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#description {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top:0;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+#about {
+  background-color: #eee;
+}
+
+#contact {
+  margin-top: 5rem;
+  background: #222;
+}
+
+#portfolio {
+  width: 100%;
+}
+
+.tiles {
+  margin-right: 0;
+  margin-left: 0;
+  float: left;
+  height: 25rem;
+}
+
+.tile-text {
+  padding-top: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tiles a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tiles a:hover {
+ color: #006633;
+}
+
+#t1{ background: #000;}
+#t2{ background: #222;}
+#t3{ background: #eee;}
+#t4{ background: #bbb;}
+#t5{ background: #999;}
+#t6{ background: #111;}
+#t7{ background: #777;}
+#t8{ background: #000;}
+#t9{ background: #444;}
