@@ -4,6 +4,7 @@
     <title>Matt Flaig - Web Developer</title>
     <meta http-equiv='content-type' content='text/html; charset=utf-8' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' href='css/portfolio.css'/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -14,21 +15,29 @@
 
       <div class="row">
         <nav class="navbar navbar-default" role="navigation">
-          <div class='col-md-12 no-padding-left'>
+          <div class='col-md-12'>
             <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
               <a class="navbar-brand" href="index.html"><div id='name'>Matt Flaig</div> <div id='description'>Web Developer</div></a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="portfolio-navbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a title='Portfolio' href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a title='Home' href="index.html">Home</a>
+                </li>
+                <li>
+                  <a title='About' href="#about">About</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div><!--closing bootstrap navbar-->
@@ -37,41 +46,86 @@
 
         <div class='row'>
           <div class='col-md-12' id='welcome'><!--Welcome section-->
-            <h3 class="text-center">Hi there! I'm Matt, an art historian turned web developer.</h3>
+            <div class='row'>
+              <div class='col-md-8 col-md-offset-2'>
+                <h2>Hi there! I'm Matt, an art historian turned web developer.</h2>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class='row'>
           <div class='col-md-12 no-horizontal-padding' id='portfolio'><!--Portfolio section-->
             <div class='row'>
-                <div id='t1' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>Tic Tac Toe</div></a></div>
-                <div id='t2' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>Weather App</div></a></div>
+                <div id='t1' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-gamepad"></i></div></a><h4>TICTACTOE: JS, jQuery, Html, Css, Bootstrap, Responsive</h4></div>
+                <div id='t2' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-cloud"></i></div></a><h4>WEATHER APP: JS, jQuery, Html, Css</h4></div>
                 <div id='t3' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
             </div>
             <div class='row'>
                 <div id='t4' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
-                <div id='t5' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>Pomodoro Timer</div></a></div>
-                <div id='t6' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>Pizza web shop</div></a></div>
+                <div id='t5' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-hourglass"></i></div></a><h4>POMODORO CLOCK: JS, jQuery, Html, Css</h4></div>
+                <div id='t6' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-shopping-cart"></i></div></a><h4>PIZZA WEBSHOP: Ruby, JS, jQuery, Haml, Sass, Responsive</h4></div>
             </div>
             <div class='row'>
-                <div id='t7' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>Quiz Maker</div></a></div>
-                <div id='t8' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='tile-text'>News Feed</div></a></div>
+                <div id='t7' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-question"></i></div></a><h4>QUIZ MAKER: Ruby, SVG, Html, Css</h4></div>
+                <div id='t8' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-sticky-note"></i></div></a><h4>POSTIT: Ruby, Html, Css</h4></div>
                 <div id='t9' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
             </div>
           </div>
         </div>
 
-        <div class='row'>
-          <div class='col-md-12' id='about'><!--About section-->
-            <h3 class='text-center'>My current skillset</h3>
+        <div class='row negative-top-margin'>
+          <div class='col-md-12 no-horizontal-padding' id='about'><!--About section-->
+            <div class='row'>
+              <div class='col-md-8 col-md-offset-2'>
+                <h2>About my skillset and education</h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class='row'>
-          <div class='col-md-12' id='contact'><!--Contact section-->
-            <h3 class='text-center'>Contact me</h3>
+          <div class='col-md-12' id='footer'><!--Contact section-->
             <div class='row'>
-              
+              <div class='col-md-8 col-md-offset-2'>
+                <div class='row'>
+                  <div class='col-md-6' id='social-links'>
+                    <ul>
+                      <li>
+                        <a href=''><i class="fa fa-github"></i></a>
+                        <p class='more-margin'>Visit <a href=''><b>@MattFlaig</b></a> on github for source code and inspiration</p>
+                      </li>
+                      <li>
+                        <a href=''><i class="fa fa-fire"></i></a>
+                        <p class='more-margin'>View my solutions and advancements on <a href=''><b>Free Codecamp</b></a></p>
+                      </li>
+                      <li>
+                        <a href=''><i class="fa fa-send"></i></a>
+                        <p>If you like to get in touch, shoot an email to <b>matt.flaig[AT]web.de</b></p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class='col-md-6' id='footer-navigation'>
+                    <ul>
+                      <li>
+                        <b><a href=''>Home</a></b></br>
+                        <p> Matt Flaig's online presence</p>
+                      </li>
+                      <li>
+                        <b><a href=''>Portfolio</a></b></br>
+                        <p>View the portfolio of MattFlaig, Web Developer</p>
+                      </li>
+                      <li>
+                        <b><a href=''>About</a></b></br>
+                        <p>Find information about Matt Flaig's Skillset and education</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,34 +1,72 @@
 body {
-  background-color: #006633;
+  background-color: #33cc66;
   color: #fff;
 }
 
-a:hover {
- color: #006633;
+/*a:focus, a:hover{
+  color: #006633;
 }
 
-#about, #contact, #welcome {
-  height: 40rem;
+a {
+  color: #fff;
+}*/
+
+#welcome {
+  height: 30rem;
 }
 
 .navbar-default {
-  background-color: #006633;
+  background-color: #33cc66;
   border: none;
   height: 9rem;
-  padding-left: 0;
 }
 
 .navbar-default .navbar-brand {
   color: #fff;
 }
 
+
 .navbar-default .navbar-nav > li > a {
   color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #006633;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a::after {
+    display:block;
+    content:attr(title);
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    margin-bottom:-1px;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #006633;
+  border-color: #006633;
 }
 
 .no-padding-left {
@@ -40,35 +78,7 @@ a:hover {
   padding-right: 0;
 }
 
-/*#navigation {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 3rem;
-  Adds the transparent background
-  background-color: rgba(1, 1, 1, 0.8);
-  color: rgba(1, 1, 1, 0.8);
-}
 
-
-#navigation .navlinks .link{
-  float: left;
-  margin-bottom: 3rem;
-  width: 100%;
-  width: 15rem;
-  border-bottom: 4px solid white;
-  padding-bottom: 1.5rem;
-  text-align: center;
-}
-
-#navigation .navlinks .link  a {
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  padding-bottom: 1.5rem;
-  width: 15rem;
-}
-*/
 #name {
   font-size: 2.5rem;
   font-weight: bold;
@@ -85,45 +95,174 @@ a:hover {
 
 #about {
   background-color: #eee;
+  margin-top:0;
+  color: #000;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
-#contact {
+#about ul li{
+  font-size: 2rem;
+}
+
+#about p {
+  font-size: 1.6rem;
+}
+
+#footer {
   margin-top: 5rem;
   background: #222;
 }
 
+#welcome {
+  margin-top: 9rem;
+}
+
 #portfolio {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .tiles {
   margin-right: 0;
   margin-left: 0;
   float: left;
-  height: 25rem;
+  height: 30rem;
+  position: relative;
 }
 
-.tile-text {
-  padding-top: 20%;
-  text-align: center;
-  font-size: 2rem;
+.tiles .fa {
+  padding-top: 10rem;
+  font-size: 8rem;
 }
 
 .tiles a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease 0s;
 }
 
 .tiles a:hover {
- color: #006633;
+ color: #33cc66;
 }
 
 #t1{ background: #000;}
-#t2{ background: #222;}
+#t2{ background: #333;}
 #t3{ background: #eee;}
 #t4{ background: #bbb;}
 #t5{ background: #999;}
 #t6{ background: #111;}
 #t7{ background: #777;}
-#t8{ background: #000;}
+#t8{ background: #222;}
 #t9{ background: #444;}
+
+
+
+
+.tiles {
+  position: relative;
+  overflow: hidden;
+  bottom: 0;
+}
+.tiles:hover h4 {
+  bottom: 0px;
+}
+
+.tiles h4 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  color: #FFF;
+  height: auto;
+  bottom: -10rem;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0% 0%;
+  transition: all 0.3s;
+}
+
+/*#portfolio a {
+  display: block;
+  position: relative;
+  text-align: center;
+  transform: translateZ(0px);
+}*/
+/*.tiles::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 62.5%;
+}*/
+
+
+@media (max-width: 767px) {
+  .negative-top-margin {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 768px) {
+  .negative-top-margin {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}
+
+#footer{
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  font-size: 1.4rem;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer li {
+  display: inline-block;
+}
+
+#social-links p {
+  display: inline-block;
+  text-align: left;
+  width: calc(100% - 50px);
+  color: #aaa;
+}
+
+#footer-navigation b {
+  text-transform: uppercase;
+}
+
+#footer-navigation p{
+  display: inline-block;
+  color: #aaa;
+}
+
+#social-links .fa{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.more-margin {
+  margin-left: 0.5rem;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease 0s;
+}
+
+#footer a:hover{
+  color: #33cc66;
+}
