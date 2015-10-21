@@ -5,6 +5,7 @@
     <meta http-equiv='content-type' content='text/html; charset=utf-8' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='css/portfolio.css'/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -13,9 +14,10 @@
   <body>
     <div class='container-fluid'>
 
+      <!--Bootstrap navbar-->
       <div class="row">
         <nav class="navbar navbar-default" role="navigation">
-          <div class='col-md-12'>
+          <div class='col-sm-10 col-sm-offset-1'>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -23,18 +25,27 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><div id='name'>Matt Flaig</div> <div id='description'>Web Developer</div></a>
+              <a class="navbar-brand" href="index.html">
+                <!--<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 52' width="52" height="52">
+                  <g fill="#fff">
+                    <path class='circle' d="M6.188 26c0-10.938 8.875-19.813 19.813-19.813 10.938 0 19.813 8.875 19.813 19.813 0 10.938-8.875 19.813-19.813 19.813-10.938 0-19.813-8.875-19.813-19.813zm-5.188 0c0 13.813 11.188 25 25 25 13.813 0 25-11.188 25-25 0-13.813-11.188-25-25-25-13.813 0-25 11.188-25 25z">
+                    </path>
+                  </g>
+                </svg>-->
+                <div id='name'>MATT FLAIG</div>
+                <div id='description'>Web Developer</div>
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="portfolio-navbar">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a title='Portfolio' href="#portfolio">Portfolio</a>
-                </li>
-                <li>
                   <a title='Home' href="index.html">Home</a>
                 </li>
                 <li>
-                  <a title='About' href="#about">About</a>
+                  <a title='Portfolio' href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a title='Skills' href="#skills">Skills</a>
                 </li>
               </ul>
             </div>
@@ -44,18 +55,21 @@
 
       <div class='main'>
 
+        <!--Welcome section-->
         <div class='row'>
-          <div class='col-md-12' id='welcome'><!--Welcome section-->
+          <div class='col-md-12' id='welcome'>
             <div class='row'>
-              <div class='col-md-8 col-md-offset-2'>
-                <h2>Hi there! I'm Matt, an art historian turned web developer.</h2>
+              <div class='col-sm-10 col-sm-offset-1'>
+                <h2 class='text-center'>Hi there! I'm Matt, an art historian turned web developer looking for the next learning experience.</h2>
+                <div class='text-center' id='portfoliobutton'><a href='#portfolio'>View Portfolio<br><i class="fa fa-angle-down"></i></a></div>
               </div>
             </div>
           </div>
         </div>
 
+        <!--Portfolio section-->
         <div class='row'>
-          <div class='col-md-12 no-horizontal-padding' id='portfolio'><!--Portfolio section-->
+          <div class='col-md-12 no-horizontal-padding' id='portfolio'>
             <div class='row'>
                 <div id='t1' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-gamepad"></i></div></a><h4>TICTACTOE: JS, jQuery, Html, Css, Bootstrap, Responsive</h4></div>
                 <div id='t2' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-cloud"></i></div></a><h4>WEATHER APP: JS, jQuery, Html, Css</h4></div>
@@ -74,53 +88,72 @@
           </div>
         </div>
 
+        <!--Skills section-->
         <div class='row negative-top-margin'>
-          <div class='col-md-12 no-horizontal-padding' id='about'><!--About section-->
+          <div class='col-sm-12 no-horizontal-padding' id='skills'>
             <div class='row'>
-              <div class='col-md-8 col-md-offset-2'>
-                <h2>About my skillset and education</h2>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+              <div class='col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1'>
+                <h2 class='text-center'>My Skillset</h2>
+                <ul>
+                  <row>
+                    <li class='col-sm-4 text-center'><img src='img/js.png' alt='javascript' height='100' width='100' /></li>
+                    <li class='col-sm-4 text-center'><img src='img/jquery.png' alt='jQuery' height='100' width='100' /></li>
+                    <li class='col-sm-4 text-center'><img src='img/ruby.png' alt='ruby' height='100' width='100' /></li>
+                  </row>
+                  <row>
+                    <li class='col-sm-4 text-center'><img src='img/bootstrap.png' alt='bootstrap' height='100' width='100' /></li>
+                    <li class='col-sm-4 text-center'><img src='img/html5.png' alt='html' height='100' width='100' /></li>
+                    <li class='col-sm-4 text-center'><img src='img/css3.png' alt='css' height='100' width='100' /></li>
+                  </row>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
+        <!--Footer-->
         <div class='row'>
-          <div class='col-md-12' id='footer'><!--Contact section-->
+          <div class='col-sm-12' id='footer'>
             <div class='row'>
-              <div class='col-md-8 col-md-offset-2'>
+              <div class='col-sm-10 col-sm-offset-1 centered'>
                 <div class='row'>
-                  <div class='col-md-6' id='social-links'>
+                  <div class='col-sm-4' id='about'>
+                    <p>
+                    After graduating in art history and philosphy from FU Berlin 2013, Matt discovered his interest in programming. He received further training in Javascript and Ruby 2014 and gained first commercial experience during a fullstack  internship in 2015. At the moment, he focuses on deepening his frontend skills via Free Codecamp.
+                    </p>
+                  </div>
+                  <div class='col-sm-4' id='social-links'>
                     <ul>
                       <li>
                         <a href=''><i class="fa fa-github"></i></a>
-                        <p class='more-margin'>Visit <a href=''><b>@MattFlaig</b></a> on github for source code and inspiration</p>
+                        <p class='more-margin'>Visit Matt Flaig on <a href=''><b>github</b></a> for source code</p>
                       </li>
                       <li>
                         <a href=''><i class="fa fa-fire"></i></a>
-                        <p class='more-margin'>View my solutions and advancements on <a href=''><b>Free Codecamp</b></a></p>
+                        <p class='more-margin'>View Matt Flaig's profile on <a href=''><b>Free Codecamp</b></a></p>
                       </li>
                       <li>
                         <a href=''><i class="fa fa-send"></i></a>
-                        <p>If you like to get in touch, shoot an email to <b>matt.flaig[AT]web.de</b></p>
+                        <p>If you like to get in touch, shoot an email to <a href=''><b>matt.flaig[AT]web.de</b></a></p>
                       </li>
                     </ul>
                   </div>
-                  <div class='col-md-6' id='footer-navigation'>
+                  <div class='col-sm-4' id='footer-navigation'>
                     <ul>
                       <li>
                         <b><a href=''>Home</a></b></br>
                         <p> Matt Flaig's online presence</p>
                       </li>
+                      </br>
+
                       <li>
                         <b><a href=''>Portfolio</a></b></br>
-                        <p>View the portfolio of MattFlaig, Web Developer</p>
+                        <p>View the portfolio of Matt Flaig, Web Developer</p>
                       </li>
+                      </br>
                       <li>
-                        <b><a href=''>About</a></b></br>
-                        <p>Find information about Matt Flaig's Skillset and education</p>
+                        <b><a href=''>Skills</a></b></br>
+                        <p>Some information about Matt's skillset</p>
                       </li>
                     </ul>
                   </div>
