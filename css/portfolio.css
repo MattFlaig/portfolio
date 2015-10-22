@@ -1,17 +1,21 @@
 body {
-  background-color: #33cc66;
+  background-color: #33aa66;
   color: #fff;
   font-family: 'Arimo', sans-serif;
 }
 
 .navbar-default {
-  background-color: #33cc66;
+  background-color: #33aa66;
   border: none;
   height: 9rem;
 }
 
 .navbar-default .navbar-brand {
   color: #fff;
+}
+
+.navbar-default .navbar-nav > li{
+  padding-top: 1rem;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -24,20 +28,22 @@ body {
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #006633;
+  color: #006644;
   font-weight: bold;
 }
 
+/*
 .navbar-default .navbar-nav > li > a::after {
   display:block;
   content:attr(title);
   font-weight:bold;
   height:1px;
-  color:#006633;
+  color:#006644;
   overflow:hidden;
   visibility:hidden;
   margin-bottom:-1px;
 }
+*/
 
 .navbar-default .navbar-collapse {
   border: none;
@@ -47,6 +53,7 @@ body {
 .navbar-default .navbar-toggle {
   border-color: #fff;
   color: #fff;
+  margin-top: 1.5rem;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -55,8 +62,8 @@ body {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-  background-color: #006633;
-  border-color: #006633;
+  background-color: #006644;
+  border-color: #006644;
 }
 
 .no-padding-left {
@@ -82,27 +89,15 @@ body {
   margin-bottom: 3rem;
 }
 
-.navbar-brand svg {
-  float: left;
-  margin-right: 0.5rem;
-}
-
-.navbar-brand a:hover svg{
-  stroke: #006633;
-}
-
 #skills {
   background-color: #fff;
   margin-top:0;
   color: #666;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 4rem;
 }
 
 #skills ul {
-  margin-top: 3rem;
+  margin-top: 4rem;
   list-style: none;
 }
 
@@ -112,7 +107,8 @@ body {
 }
 
 #skills h2{
-  color: #666;
+  color: #666;margin-bottom: 4rem;
+
 }
 
 #footer {
@@ -121,12 +117,12 @@ body {
 }
 
 #welcome {
-  margin-top: 5rem;
+  margin-top: 9rem;
   margin-bottom: 5rem;
 }
 
 #welcome h2{
-  padding: 4rem;
+  padding: 0 4rem 4rem 4rem;
   font-size: 3.8rem;
   line-height: 5rem;
 }
@@ -151,19 +147,19 @@ body {
 }
 
 #portfoliobutton a:hover {
-  color: #006633;
+  color: #006644;
 }
 
 .tiles {
   margin-right: 0;
   margin-left: 0;
   float: left;
-  height: 30rem;
+  height: 35rem;
   position: relative;
 }
 
 .tiles .fa {
-  padding-top: 10rem;
+  padding-top: 12rem;
   font-size: 8rem;
 }
 
@@ -174,7 +170,7 @@ body {
 }
 
 .tiles a:hover {
- color: #33cc66;
+ color: #33aa66;
 }
 
 #t1{ background: #000;}
@@ -274,7 +270,7 @@ body {
 }
 
 #footer a:hover{
-  color: #33cc66;
+  color: #33aa66;
 }
 
 @media (max-width: 767px) {
