@@ -5,7 +5,7 @@
     <meta http-equiv='content-type' content='text/html; charset=utf-8' />
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type='text/css' href='css/portfolio.css'/>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
       <!--Bootstrap navbar-->
       <div class="row">
         <nav class="navbar navbar-default" role="navigation">
-          <div class='col-sm-10 col-sm-offset-1'>
+          <div class='col-sm-10 col-sm-offset-1' id="navigation">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -65,18 +65,18 @@
         <div class='row'>
           <div class='col-md-12 no-horizontal-padding' id='portfolio'>
             <div class='row'>
-                <div id='t1' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-gamepad"></i></div></a><h4>TICTACTOE: JS, jQuery, Html, Css, Bootstrap, Responsive</h4></div>
-                <div id='t2' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-sun-o"></i></div></a><h4>WEATHER APP: JS, jQuery, Html, Css</h4></div>
+                <div id='t1' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='projects/tictactoe/index.html' target='_blank'><div class='text-center'><i class="fa fa-gamepad"></i></div></a><h4>TICTACTOE: JS, jQuery, Html, Css, Bootstrap, Responsive</h4></div>
+                <div id='t2' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='projects/cloudy/index.html' target='_blank'><div class='text-center'><i class="fa fa-sun-o"></i></div></a><h4>WEATHER APP: JS, jQuery, Html, Css</h4></div>
                 <div id='t3' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
             </div>
             <div class='row'>
                 <div id='t4' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
-                <div id='t5' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href=''><div class='text-center'><i class="fa fa-hourglass"></i></div></a><h4>POMODORO CLOCK: JS, jQuery, Html, Css</h4></div>
-                <div id='t6' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='http://www.pizzaallagrande.de' target='_blank'><div class='text-center'><i class="fa fa-shopping-cart"></i></div></a><h4>PIZZA WEBSHOP: Ruby, JS, jQuery, Haml, Sass, Responsive</h4></div>
+                <div id='t5' class='col-md-4 col-sm-6 col-xs-12 tiles'><a><div class='text-center'><i class="fa fa-hourglass"></i></div></a><h4>POMODORO CLOCK: Coming soon!</h4></div>
+                <div id='t6' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='http://www.pizzaallagrande.de' target='_blank'><div class='text-center'><i class="fa fa-shopping-cart"></i></div></a><h4>PIZZA WEBSHOP: Ruby, JS, jQuery, Haml, Scss, Unit Tests</h4></div>
             </div>
             <div class='row'>
-                <div id='t7' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='https://frozen-waters-6972.herokuapp.com/' target='_blank'><div class='text-center'><i class="fa fa-question"></i></div></a><h4>QUIZ MAKER: Ruby, SVG, Html, Css</h4></div>
-                <div id='t8' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='http://enigmatic-fortress-8132.herokuapp.com/' target='_blank'><div class='text-center'><i class="fa fa-sticky-note"></i></div></a><h4>POSTIT: Ruby, Html, Css</h4></div>
+                <div id='t7' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='https://frozen-waters-6972.herokuapp.com/' target='_blank'><div class='text-center'><i class="fa fa-question"></i></div></a><h4>QUIZ MAKER: Ruby, SVG, Html, Css, Unit Tests</h4></div>
+                <div id='t8' class='col-md-4 col-sm-6 col-xs-12 tiles'><a href='http://quiet-chamber-2363-staging.herokuapp.com/' target='_blank'><div class='text-center'><i class="fa fa-film"></i></div></a><h4>MYFLIX: Ruby, JS, Haml, Sass, Amazon AWS, TDD</h4></div>
                 <div id='t9' class='col-md-4 col-sm-6 col-xs-12 tiles'></div>
             </div>
           </div>
@@ -113,7 +113,7 @@
                 <div class='row'>
                   <div class='col-sm-4' id='about'>
                     <p>
-                    After graduating in art history and philosphy from FU Berlin 2013, Matt discovered his interest in programming. He received further training in Javascript and Ruby 2014 and gained first commercial experience during a fullstack  internship in 2015. At the moment, he focuses on deepening his frontend skills via Free Codecamp.
+                    After graduating in art history and philosophy from FU Berlin 2013, Matt discovered his interest in programming. He received further training in Javascript and Ruby 2014 and gained first commercial experience during a fullstack  internship in 2015.
                     </p>
                   </div>
                   <div class='col-sm-4' id='social-links'>
@@ -124,7 +124,7 @@
                       </li>
                       <li>
                         <a href='http://www.freecodecamp.com/mattflaig' target='_blank'><i class="fa fa-fire"></i></a>
-                        <p class='more-margin'>View Matt's profile on <a href='http://www.freecodecamp.com/mattflaig' target='_blank'><b>Free Codecamp</b></a></p>
+                        <p class='more-margin'>View my profile on <a href='http://www.freecodecamp.com/mattflaig' target='_blank'><b>Free Codecamp</b></a></p>
                       </li>
                       <li>
                         <a href='mailto:matt.flaig@web.de'><i class="fa fa-send"></i></a>
